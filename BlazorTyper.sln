@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTyper", "BlazorTyper\BlazorTyper.csproj", "{847DA6B2-3B10-4562-A2A0-E844B8FB8E26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{847DA6B2-3B10-4562-A2A0-E844B8FB8E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{847DA6B2-3B10-4562-A2A0-E844B8FB8E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{847DA6B2-3B10-4562-A2A0-E844B8FB8E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{847DA6B2-3B10-4562-A2A0-E844B8FB8E26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA3E514D-11B5-46DE-ABE2-29D7BE2C8C3D}
+	EndGlobalSection
+EndGlobal
