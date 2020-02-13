@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Gustavo Santos</Authors>
+    <Description>Blazor component to simulate a text being typed.</Description>
+    <RepositoryUrl>https://github.com/gustavoosantoos/BlazorTyper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/gustavoosantoos/BlazorTyper</PackageProjectUrl>
   </PropertyGroup>
 
 
