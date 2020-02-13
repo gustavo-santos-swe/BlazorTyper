@@ -1,6 +1,8 @@
 # BlazorTyper
 Blazor component to simulate text being typed.
 
+![BlazorTyperGif](https://media.giphy.com/media/S936kVpcDGKmc7rGvy/giphy.gif)
+
 ### Prerequisites:
 - Blazor WebAssembly
 - Microsoft.AspNetCore.Blazor [minimum version: 3.2.0-preview1]
