@@ -9,7 +9,7 @@ Blazor component to simulate text being typed.
 
 ### How to install:
 
-Run the following command in your terminal, inside the project folder:<br/>
+Run the following command in your terminal, inside the project folder (or, install via Nuget, the package BlazorTyper):<br/>
 `dotnet add package BlazorTyper`
 
 In your _Imports.razor file or in the component file, include: <br/>
