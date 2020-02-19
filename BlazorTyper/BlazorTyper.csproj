@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/gustavoosantoos/BlazorTyper</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/gustavoosantoos/BlazorTyper</PackageProjectUrl>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
 

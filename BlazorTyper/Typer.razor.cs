@@ -12,6 +12,8 @@ namespace BlazorTyper
         [Parameter] public bool EraseBeforeRepeat { get; set; }
         [Parameter] public TimeSpan? TypingDelay { get; set; }
         [Parameter] public TimeSpan PreTypingDelay { get; set; } = TimeSpan.Zero;
+        [Parameter] public Action OnTyped { get; set; }
+        [Parameter] public Action OnCompleted { get; set; }
 
         protected string TypingText { get; set; }
         protected int RepeatCount { get; set; }
@@ -47,8 +49,11 @@ namespace BlazorTyper
                 TypingText += c;
                 StateHasChanged();
 
+                OnTyped?.Invoke();
                 await Task.Delay(TypingDelayOrRandom);
             }
+
+            OnCompleted.Invoke();
         }
 
         private async Task StartErasingAsync()
