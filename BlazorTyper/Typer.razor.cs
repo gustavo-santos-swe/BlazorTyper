@@ -6,7 +6,6 @@ namespace BlazorTyper
 {
     public class TyperBase : ComponentBase
     {
-        [Parameter] public bool Start { get; set; }
         [Parameter] public string Text { get; set; }
         [Parameter] public int Repeat { get; set; }
         [Parameter] public bool EraseBeforeRepeat { get; set; }
@@ -19,24 +18,21 @@ namespace BlazorTyper
         protected int RepeatCount { get; set; }
         protected TimeSpan TypingDelayOrRandom => TypingDelay ?? TimeSpan.FromMilliseconds(new Random().Next(20, 100));
 
-        protected override async Task OnParametersSetAsync()
+        protected override async Task OnInitializedAsync()
         {
-            if (Start)
+            await Task.Delay(PreTypingDelay);
+            await StartTypingAsync();
+
+            while (RepeatCount < Repeat)
             {
+                if (EraseBeforeRepeat)
+                {
+                    await StartErasingAsync();
+                }
+
                 await Task.Delay(PreTypingDelay);
                 await StartTypingAsync();
-
-                while (RepeatCount < Repeat)
-                {
-                    if (EraseBeforeRepeat)
-                    {
-                        await StartErasingAsync();
-                    }
-
-                    await Task.Delay(PreTypingDelay);
-                    await StartTypingAsync();
-                    RepeatCount++;
-                }
+                RepeatCount++;
             }
         }
 
