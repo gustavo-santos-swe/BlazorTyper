@@ -49,7 +49,7 @@ namespace BlazorTyper
                 await Task.Delay(TypingDelayOrRandom);
             }
 
-            OnCompleted.Invoke();
+            OnCompleted?.Invoke();
         }
 
         private async Task StartErasingAsync()
